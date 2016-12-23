@@ -6,7 +6,7 @@ These are just plain presentation website for contests organized by France-ioi
 * [alkindi-site](https://github.com/France-ioi/alkindi-site) : Corresponds to http://concours-alkindi.fr
 * [Castor-informatique.fr](https://github.com/France-ioi/Castor-informatique.fr) : Corresponds to http://castor-informatique.fr
 
-## Login module:
+## Login module
 * [login-module](https://github.com/France-ioi/login-module)
 This module takes care of the authentication of users into our different platforms. Different authentication methods are supported: plain login/password, google, facebook, authentication through LTI, SAML (in progress), and some custom authentication from other platforms such as PMS.
 
@@ -54,8 +54,9 @@ It can be tested on [codecast.france-ioi.org](codecast.france-ioi.org), try the 
 ## Monitoring tools
 * [bebras-monitor](https://github.com/France-ioi/bebras-monitor)
 This tool is used to monitor connexions to a platform, show statistics about the different ips that connect to it, and give the possibility to whitelist or blacklist some ips. This helps to protect against some types of DDOS attacks.
+* [bebras-guard](https://github.com/France-ioi/bebras-guard)
 
-## Task integration API:
+## Task integration API
 This API’s purpose is to make it easy to integrate a given task in different platforms, and for platforms to use tasks from all types of sources. The API is [documented here](https://docs.google.com/document/d/1JMca_fGNyLtSPjsTuIv2owcnNt2lH4iHkZ1pTURIL6A/edit?usp=sharing)
 * [pem-task](https://github.com/France-ioi/pem-task)
 Scripts that are part of the task-side of the task integration API.
@@ -96,8 +97,7 @@ This is the tool that actually grades a submission, running it within a sandbox 
 This is a simple script that converts programs written in the JavaScool language (a simplified version of Java), into pure Java, so that they can be graded
 
 * [fioi-editor](https://github.com/France-ioi/fioi-editor)
-TODO?
-Previous version of fioi-editor2 ? Deprecated ?
+TODO. Previous version of fioi-editor2 ? Deprecated ?
 
 ## Bebras tasks
 * [bebras-tasks](https://github.com/France-ioi/bebras-tasks)
@@ -105,7 +105,7 @@ This repository contains all past tasks from our Castor Informatique contest. Th
 It uses:
  * [bebras-modules](https://github.com/France-ioi/bebras-modules) 
 
-## Tasks libraries:
+## Tasks libraries
 * [bebras-modules](https://github.com/France-ioi/bebras-modules)
 This repository contains all types of libraries that are used to create various interactive tasks. Each library should probably have its own repository, but we want non-developers to be able to install everything just with an svn checkout of a private repository where we work on future contest tasks.
 * [fioi-blockly](https://github.com/France-ioi/fioi-blockly)
@@ -116,8 +116,7 @@ Modifications to Blockly, overriding and adding some blocks to Blockly; meant to
 * [drag-and-drop-js](https://github.com/France-ioi/drag-and-drop-js)
 This library is used to create tasks that make heavy use of drag & drop within various containers.
 * [bebras-math-template](https://github.com/France-ioi/bebras-math-template)
-TODO
-This is an example of task that uses MathJax
+TODO. This is an example of task that uses MathJax
 
 ## Bebras review
 * [bebras-review](https://github.com/France-ioi/bebras-review)
@@ -136,6 +135,3 @@ Used to maintain the schema migrations of the database of different projects.
 Libraries to manipulate the LTI standard, used to integrate our tasks into platforms that support LTI, and to use LTI platforms as an authentication method for the login-module
 * [jschannel](https://github.com/France-ioi/jschannel)
 Used to communicate between tasks and platforms. We need to make sure we have a version that never changes, so that the API can be based on that specific version.
-
-## Other
-* [bebras-guard](https://github.com/France-ioi/bebras-guard)
