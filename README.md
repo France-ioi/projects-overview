@@ -1,5 +1,11 @@
 # projects-overview
 
+This document lists all the public repositories of the [france-ioi](http://www.france-ioi.org) organization.
+
+All of our tools are under MIT License, even when the License is not specified in the repository.
+
+All of our tasks published in these repositories are under (CC-BY-SA)[https://creativecommons.org/licenses/by-sa/2.0/?] license.
+
 ## Presentation websites
 These are just plain presentation website for contests organized by France-ioi
 
