@@ -1,12 +1,16 @@
 # projects-overview
 
-## Presentation websites:
+## Presentation websites
 These are just plain presentation website for contests organized by France-ioi
 
 * [alkindi-site](https://github.com/France-ioi/alkindi-site) : Corresponds to http://concours-alkindi.fr
 * [Castor-informatique.fr](https://github.com/France-ioi/Castor-informatique.fr) : Corresponds to http://castor-informatique.fr
 
-## Algorea Exercise platform:
+## Login module:
+* [login-module](https://github.com/France-ioi/login-module)
+This module takes care of the authentication of users into our different platforms. Different authentication methods are supported: plain login/password, google, facebook, authentication through LTI, SAML (in progress), and some custom authentication from other platforms such as PMS.
+
+## Algorea learning platform
 * [AlgoreaPlatform](https://github.com/France-ioi/AlgoreaPlatform)
 This is the main repository for our new exercise platform. The goal is for this platform to eventually replace our other platforms, once all the required features are in place.
 A beta version can be tested on http://parcours.algorea.org
@@ -26,29 +30,30 @@ Production versions of the contest side of this platform are available here (amo
 [concours.castor-informatique.fr](http://concours.castor-informatique.fr)
 [epreuve.concours-alkindi.fr](http://epreuve.concours-alkindi.fr)
 
-## Alkindi platform:
+## Alkindi contest platform
 This platform is used to run the rounds 2 and up of the Alkindi cryptography contest. Students that are qualified can log in, create or join teams, access to the current round of tasks and collaborate to solve them.
 * [alkindi-frontend](https://github.com/France-ioi/alkindi-frontend)
 * [alkindi-backend](https://github.com/France-ioi/alkindi-backend)
 
-## Alkindi tasks (for rounds >= 2):
+## Alkindi tasks
 Tasks for the Alkindi platform are developed separately, but do not use the task API yet. They can mostly be tested independently of the platform, but are not yet ready to be integrated in other platforms.
 * [alkindi-task-lib](https://github.com/France-ioi/alkindi-task-lib)
 * [alkindi-task-adfgx](https://github.com/France-ioi/alkindi-task-adfgx)
 * [alkindi-task-playfair](https://github.com/France-ioi/alkindi-task-playfair)
 * [alkindi-task-example](https://github.com/France-ioi/alkindi-task-example)
 
-## Monitoring tools
-* [bebras-monitor](https://github.com/France-ioi/bebras-monitor)
-This tool is used to monitor connexions to a platform, show statistics about the different ips that connect to it, and give the possibility to whitelist or blacklist some ips. This helps to protect against some types of DDOS attacks.
-
-## Codecast project:
+## Codecast learning tool
 The codecast project is a C language interpreter and debugger that runs in the browser, except for the parsing stage which is done on the server using clang. The tool is designed as an educational tool. Teachers can record a session where they speak while using the tool to demonstrate the execution of C code to teach a new concept. The recording can then be played by students that can interrupt it at any time to take over and play with the debugger.
+It can be tested on [codecast.france-ioi.org](codecast.france-ioi.org), try the examples in the top-right corner.
 * [fioi-recorder](https://github.com/France-ioi/fioi-recorder)
 * [editor-recorder](https://github.com/France-ioi/editor-recorder)
 * [persistent-c](https://github.com/France-ioi/persistent-c)
 * [c-to-json](https://github.com/France-ioi/c-to-json)
 * [clang-ast-webservice](https://github.com/France-ioi/clang-ast-webservice)
+
+## Monitoring tools
+* [bebras-monitor](https://github.com/France-ioi/bebras-monitor)
+This tool is used to monitor connexions to a platform, show statistics about the different ips that connect to it, and give the possibility to whitelist or blacklist some ips. This helps to protect against some types of DDOS attacks.
 
 ## Task integration API:
 This API’s purpose is to make it easy to integrate a given task in different platforms, and for platforms to use tasks from all types of sources. The API is [documented here](https://docs.google.com/document/d/1JMca_fGNyLtSPjsTuIv2owcnNt2lH4iHkZ1pTURIL6A/edit?usp=sharing)
@@ -75,9 +80,7 @@ TODO
 * [fioi-tasks-template](https://github.com/France-ioi/fioi-tasks-template)
 TODO
 
-
-
-## Server-evaluated programming tasks:
+## Server-evaluated programming tasks
 This set of tools is used to offer programming tasks, where the solutions of the students are sent to servers to be graded.
 * [TaskPlatform](https://github.com/France-ioi/TaskPlatform)
 This is the main interface that hosts programming tasks, and is the user-facing entry points of programming tasks.
@@ -96,19 +99,11 @@ This is a simple script that converts programs written in the JavaScool language
 TODO?
 Previous version of fioi-editor2 ? Deprecated ?
 
-## Login module:
-* [login-module](https://github.com/France-ioi/login-module)
-Module that takes care of the authentication of users into our different platforms. Different authentication methods are supported: plain login/password, google, facebook, authentication through LTI, SAML (in progress), and some custom authentication from other platforms such as PMS.
-
-## Forks of external tools:
-* [oauth2-basicauth](https://github.com/France-ioi/oauth2-basicauth)
-Used by the login-module. TODO: why forked?
-* [dbv](https://github.com/France-ioi/dbv)
-Used to maintain the schema migrations of the database of different projects.
-* [lti](https://github.com/France-ioi/lti)
-Libraries to manipulate the LTI standard, used to integrate our tasks into platforms that support LTI, and to use LTI platforms as an authentication method for the login-module
-* [jschannel](https://github.com/France-ioi/jschannel)
-Used to communicate between tasks and platforms. We need to make sure we have a version that never changes, so that the API can be based on that specific version.
+## Bebras tasks
+* [bebras-tasks](https://github.com/France-ioi/bebras-tasks)
+This repository contains all past tasks from our Castor Informatique contest. These can be developped and tested outside of any platform.
+It uses:
+ * [bebras-modules](https://github.com/France-ioi/bebras-modules) 
 
 ## Tasks libraries:
 * [bebras-modules](https://github.com/France-ioi/bebras-modules)
@@ -124,14 +119,23 @@ This library is used to create tasks that make heavy use of drag & drop within v
 TODO
 This is an example of task that uses MathJax
 
-## Bebras tasks:
-* [bebras-tasks](https://github.com/France-ioi/bebras-tasks)
-This repository contains all past tasks from our Castor Informatique contest.
-
-## Bebras review:
+## Bebras review
 * [bebras-review](https://github.com/France-ioi/bebras-review)
 This tool is intended to help members of the Bebras community to review tasks that are created by many countries each year, and help them select a subset of tasks for their contest.
 
-## Other:
+## Synchronization framework
 * [common-framework](https://github.com/France-ioi/common-framework)
+This repository contrains a few tools that are shared by several platforms. The main one is the synchronization framework, which takes care of synchronizing a subset of a mysql database with as small client-side database.
+
+## Forks of external tools
+* [oauth2-basicauth](https://github.com/France-ioi/oauth2-basicauth)
+Used by the login-module. TODO: why forked?
+* [dbv](https://github.com/France-ioi/dbv)
+Used to maintain the schema migrations of the database of different projects.
+* [lti](https://github.com/France-ioi/lti)
+Libraries to manipulate the LTI standard, used to integrate our tasks into platforms that support LTI, and to use LTI platforms as an authentication method for the login-module
+* [jschannel](https://github.com/France-ioi/jschannel)
+Used to communicate between tasks and platforms. We need to make sure we have a version that never changes, so that the API can be based on that specific version.
+
+## Other
 * [bebras-guard](https://github.com/France-ioi/bebras-guard)
