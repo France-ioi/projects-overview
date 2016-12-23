@@ -7,10 +7,10 @@ All of our tools are under MIT License, even when the License is not specified i
 All of our tasks published in these repositories are under (CC-BY-SA)[https://creativecommons.org/licenses/by-sa/2.0/?] license.
 
 ## Presentation websites
-These are just plain presentation website for contests organized by France-ioi
+These are just basic presentation websites for contests organized by France-ioi
 
-* [alkindi-site](https://github.com/France-ioi/alkindi-site) : Corresponds to http://concours-alkindi.fr
-* [Castor-informatique.fr](https://github.com/France-ioi/Castor-informatique.fr) : Corresponds to http://castor-informatique.fr
+* [alkindi-site](https://github.com/France-ioi/alkindi-site) corresponds to http://concours-alkindi.fr
+* [Castor-informatique.fr](https://github.com/France-ioi/Castor-informatique.fr) corresponds to http://castor-informatique.fr
 
 ## Login module
 * [login-module](https://github.com/France-ioi/login-module)
@@ -18,8 +18,7 @@ This module takes care of the authentication of users into our different platfor
 
 ## Algorea learning platform
 * [AlgoreaPlatform](https://github.com/France-ioi/AlgoreaPlatform)
-This is the main repository for our new exercise platform. The goal is for this platform to eventually replace our other platforms, once all the required features are in place.
-A beta version can be tested on http://parcours.algorea.org
+This is the main repository for our new exercise platform. The goal is for this platform to eventually replace our other platforms, once all the required features are in place. A beta version can be tested on http://parcours.algorea.org
 It uses:
  * [commonFramework](https://github.com/France-ioi/commonFramework) at its heart for client/server synchronization
  * [login-module](https://github.com/France-ioi/login-module) for authentication
@@ -30,11 +29,11 @@ It uses:
 This platform is specialized in organizing large scale contests that make use of client-side only interactive tasks. It uses tasks that implement the task integration API as well as the installation API.
 It uses:
  * [commonFramework](https://github.com/France-ioi/commonFramework) for client/server synchronization
-...
+ * ...
 
 Production versions of the contest side of this platform are available here (among other places):
-[concours.castor-informatique.fr](http://concours.castor-informatique.fr)
-[epreuve.concours-alkindi.fr](http://epreuve.concours-alkindi.fr)
+ * [concours.castor-informatique.fr](http://concours.castor-informatique.fr)
+ * [epreuve.concours-alkindi.fr](http://epreuve.concours-alkindi.fr)
 
 ## Alkindi contest platform
 This platform is used to run the rounds 2 and up of the Alkindi cryptography contest. Students that are qualified can log in, create or join teams, access to the current round of tasks and collaborate to solve them.
@@ -110,6 +109,8 @@ TODO. Previous version of fioi-editor2 ? Deprecated ?
 This repository contains all past tasks from our Castor Informatique contest. These can be developped and tested outside of any platform.
 It uses:
  * [bebras-modules](https://github.com/France-ioi/bebras-modules) 
+
+These tasks can be tested as part of our contest archive on [concours.castor-informatique.fr](http://concours.castor-informatique.fr), or directly on [castor-informatique.fr/questions](http://castor-informatique.fr/questions).
 
 ## Tasks libraries
 * [bebras-modules](https://github.com/France-ioi/bebras-modules)
