@@ -130,7 +130,7 @@ This tool is intended to help members of the Bebras community to review tasks th
 
 ## Synchronization framework
 * [commonFramework](https://github.com/France-ioi/commonFramework)
-This repository contrains a few tools that are shared by several platforms. The main one is the synchronization framework, which takes care of synchronizing a subset of a mysql database with as small client-side database.
+This repository contains a few tools that are shared by several platforms. The main one is the synchronization framework, which takes care of synchronizing a subset of a mysql database with as small client-side database.
 
 ## Forks of external tools
 * [oauth2-basicauth](https://github.com/France-ioi/oauth2-basicauth)
