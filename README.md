@@ -82,7 +82,7 @@ This set of tools is used to offer programming tasks, where the solutions of the
 * [TaskPlatform](https://github.com/France-ioi/TaskPlatform)
 This is the main interface that hosts programming tasks, and is the user-facing entry points of programming tasks.
 * [fioi-editor2](https://github.com/France-ioi/fioi-editor2)
-This is the ace-based multi-file editor used by TaskPlatform to let the user edit different solutions in different languages, as well as different test cases
+This is the ace-based multi-file editor used by TaskPlatform to let the user edit different solutions in different languages, as well as different test cases. Also integrates a Blockly editor.
 * [submission-manager](https://github.com/France-ioi/submission-manager)
 This is an interface that presents the results of the grading of a submission. It is intended to be integrated in the TaskPlatform interface, or any similar interface.
 * [graderqueue](https://github.com/France-ioi/graderqueue)
