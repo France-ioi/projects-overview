@@ -21,7 +21,7 @@ This module takes care of the authentication of users into our different platfor
 This is the main repository for our new exercise platform. The goal is for this platform to eventually replace our other platforms, once all the required features are in place.
 A beta version can be tested on http://parcours.algorea.org
 It uses:
- * [common-framework](https://github.com/France-ioi/common-framework) at its heart for client/server synchronization
+ * [commonFramework](https://github.com/France-ioi/commonFramework) at its heart for client/server synchronization
  * [login-module](https://github.com/France-ioi/login-module) for authentication
  * [pem-platform](https://github.com/France-ioi/pem-platform) to integrate tasks through the task API
 
@@ -29,7 +29,7 @@ It uses:
 * [bebras-platform](https://github.com/France-ioi/bebras-platform)
 This platform is specialized in organizing large scale contests that make use of client-side only interactive tasks. It uses tasks that implement the task integration API as well as the installation API.
 It uses:
- * [common-framework](https://github.com/France-ioi/common-framework) for client/server synchronization
+ * [commonFramework](https://github.com/France-ioi/commonFramework) for client/server synchronization
 ...
 
 Production versions of the contest side of this platform are available here (among other places):
@@ -129,7 +129,7 @@ TODO. This is an example of task that uses MathJax
 This tool is intended to help members of the Bebras community to review tasks that are created by many countries each year, and help them select a subset of tasks for their contest.
 
 ## Synchronization framework
-* [common-framework](https://github.com/France-ioi/common-framework)
+* [commonFramework](https://github.com/France-ioi/commonFramework)
 This repository contrains a few tools that are shared by several platforms. The main one is the synchronization framework, which takes care of synchronizing a subset of a mysql database with as small client-side database.
 
 ## Forks of external tools
