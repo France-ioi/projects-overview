@@ -15,6 +15,9 @@ These are just basic presentation websites for contests organized by France-ioi
 ## Login module
 * [login-module](https://github.com/France-ioi/login-module)
 This module takes care of the authentication of users into our different platforms. Different authentication methods are supported: plain login/password, google, facebook, authentication through LTI, SAML (in progress), and some custom authentication from other platforms such as PMS.
+* [lti-to-bebras](https://github.com/France-ioi/lti-to-bebras)
+This module is used here as a way to authenticate to the login-module through the LTI standard. It is also used to directly integrate tasks into platforms that support LTI (see below).
+
 
 ## Algorea learning platform
 * [AlgoreaPlatform](https://github.com/France-ioi/AlgoreaPlatform)
@@ -73,7 +76,7 @@ A tool to import tasks from svn:
  * For server evaluated tasks, import their content into a mysql database of tasks, to be used by TaskPlatform
  * For pure client tasks (bebras-based) or presentation, simply place the files on a server. (This is temporary)
 * [lti-to-bebras](https://github.com/France-ioi/lti-to-bebras)
-Wrapper to present tasks that conform to our Integration API, as LTI-compliant tasks.
+Wrapper to present tasks that conform to our Integration API, as LTI-compliant tasks. (also used with login-module to authenticate users through LTI)
 
 * [pem-task-compiler](https://github.com/France-ioi/pem-task-compiler)
 TODO: still used somewhere?
