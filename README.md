@@ -53,7 +53,7 @@ Tasks for the Alkindi platform are developed separately, but do not use the task
 ## Codecast learning tool
 The codecast project is a C language interpreter and debugger that runs in the browser, except for the parsing stage which is done on the server using clang. The tool is designed as an educational tool. Teachers can record a session where they speak while using the tool to demonstrate the execution of C code to teach a new concept. The recording can then be played by students that can interrupt it at any time to take over and play with the debugger.
 It can be tested on [codecast.france-ioi.org](codecast.france-ioi.org), try the examples in the top-right corner.
-* [fioi-recorder](https://github.com/France-ioi/fioi-recorder): recording/replaying events and voice
+* [codecast](https://github.com/France-ioi/codecast): recording/replaying events and voice
 * [persistent-c](https://github.com/France-ioi/persistent-c): C interpreter in the browser
 * [c-to-json](https://github.com/France-ioi/c-to-json): uses clang to parse C and send a json AST to the client
 
