@@ -72,9 +72,9 @@ Scripts that are part of the platform-side of the task integration API
 A tool to validate that tasks and platforms conform to the Task integration API.
 It also provides a way to check that grading works as expected.
 * [fioi-task-importer](https://github.com/France-ioi/fioi-task-importer)
-A tool to import tasks from svn:
- * For server evaluated tasks, import their content into a mysql database of tasks, to be used by TaskPlatform
- * For pure client tasks (bebras-based) or presentation, simply place the files on a server. (This is temporary)
+A tool to import tasks from svn ([documentation here](http://france-ioi.github.io/fioi-task-importer/)):
+    * For server evaluated tasks, import their content into a mysql database of tasks, to be used by TaskPlatform
+    * For pure client tasks (bebras-based) or presentation, simply place the files on a server. (This is temporary)
 * [lti-to-bebras](https://github.com/France-ioi/lti-to-bebras)
 Wrapper to present tasks that conform to our Integration API, as LTI-compliant tasks. (also used with login-module to authenticate users through LTI)
 
@@ -98,7 +98,7 @@ This is an interface that presents the results of the grading of a submission. I
 * [graderqueue](https://github.com/France-ioi/graderqueue)
 Submissions from students are sent to this queue, and different servers connect to that queue to obtain their next submission to grade. The repository also includes graderserver, which fetches tasks from this queue and sends them for evaluation to taskgrader.
 * [taskgrader](https://github.com/France-ioi/taskgrader)
-This is the tool that actually grades a submission, running it within a sandbox (isolate), on a list of specified test cases, etc. The repository includes lots of tools to create, test and submit tasks.
+This is the tool that actually grades a submission, running it within a sandbox (isolate), on a list of specified test cases, etc. The repository includes lots of tools to create, test and submit tasks ([documentation here](http://france-ioi.github.io/taskgrader/)).
 * [Jvs2Java](https://github.com/France-ioi/Jvs2Java)
 This is a simple script that converts programs written in the JavaScool language (a simplified version of Java), into pure Java, so that they can be graded
 
