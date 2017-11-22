@@ -134,9 +134,21 @@
 <p>They are attached to users, and some of them can even allow authentication of users from one platform to another.</p>
 <h2 id="badge-verification">Badge verification</h2>
 <p>A badge can be an URL to a verification service, along with a code.</p>
-<p>For instance, the <a href="https://github.com/France-ioi/login-module">login-module</a> can be required to ask users who log in for a badge corresponding to a <a href="https://github.com/France-ioi/bebras-platform">bebras-platform</a> contest. The badge URL will then be <code>http://badges.example.com/path/to/badge</code>, where <code>path/to/badge</code> is the target badge we are requesting.</p>
-<p>Users will be prompted for a code; they can either input a code, which will be checked against the badge verification service, or say they don't have the code. If they input a valid code, the login-module will then add the badge to the user, badge which will be presented to the login request origin upon each successful login. It can be used for instance in <a href="https://github.com/France-ioi/AlgoreaPlatform">AlgoreaPlatform</a> to allow access to some content only to users with a certain badge.</p>
-<p>The verification is done by a POST request to the badge URL. When the user inputs a code, the login-module will send a POST request to the badge URL, with the parameters <code>action='verifyCode'</code> and the <code>code</code>. If the code is valid, bebras-platform will then answer with the information of the user in JSON format: <code>sFirstName</code>, <code>sLastName</code>, <code>sSex</code>, <code>sEmail</code>, <code>sZipcode</code>, <code>franceioiID</code>. Else it will return null.</p></div>
+<p>For instance, the <a href="https://github.com/France-ioi/login-module">login-module</a> can be required to ask users who log in for a badge they acquired when participating in a contest on <a href="https://github.com/France-ioi/bebras-platform">bebras-platform</a>. The badge URL will then be <code>https://badges.example.com/path/to/badge</code>, where <code>path/to/badge</code> is the target badge we are requesting.</p>
+<p>Users will be prompted for a code; they can either input a code, which will be checked against the badge verification service, or say they don't have the code. If they input a valid code, the login-module will then store the badge for this user. From then on, this badge will be presented to the login request origin upon each successful login. It can be used for instance in <a href="https://github.com/France-ioi/AlgoreaPlatform">AlgoreaPlatform</a> to allow access to some content only to users with a certain badge.</p>
+<p>The verification is done by a POST request to the badge URL. When the user inputs a code, the login-module will send a POST request to the badge URL, with the parameters <code>action='verifyCode'</code> and the user <code>code='abcdef'</code>. If the code is valid, bebras-platform will then answer with some information about the user who acquired the badge in JSON format:</p>
+<pre><code>{
+    &quot;sFirstName&quot;: &quot;Example&quot;,
+    &quot;sLastName&quot;: &quot;Name&quot;,
+    &quot;sSex&quot;: &quot;Male&quot;,
+    &quot;sEmail&quot;: &quot;name@example.com&quot;,
+    &quot;sZipcode&quot;: &quot;12345&quot;,
+    &quot;franceioiID&quot;: &quot;678&quot;
+}
+</code></pre>
+
+<p>The fields <code>sFirstName</code>, <code>sLastName</code>, <code>sSex</code>, <code>sEmail</code>, <code>sZipcode</code> are generic fields, but the answer can also contain fields specific to the badge, such as <code>franceioiID</code> in the example above.</p>
+<p>If the code is invalid, the answer will be null.</p></div>
             
         </div>
 
