@@ -1,0 +1,9 @@
+site_name: Projects overview
+pages:
+- "Home": index.md
+- "Presentation": readme.md
+- "Common APIs":
+    - "Badges system": badges.md
+repo_url: https://github.com/France-ioi/projects-overview/
+site_description: Overview of various France-IOI projects and common documentation
+site_author: France-IOI
