@@ -4,7 +4,7 @@ This document lists all the public repositories of the [france-ioi](http://www.f
 
 All of our tools are under MIT License, even when the License is not specified in the repository.
 
-All of our tasks published in these repositories are under (CC-BY-SA)[https://creativecommons.org/licenses/by-sa/2.0/?] license.
+All of our tasks published in these repositories are under [CC-BY-SA](https://creativecommons.org/licenses/by-sa/2.0/?) license.
 
 This repository also hosts some [documentation common to projects](https://france-ioi.github.io/projects-overview/) on GitHub pages.
 

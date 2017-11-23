@@ -1,8 +1,8 @@
 # Badges system
 
-Badges are tokens which can represent various informations, such as access to a contest, belonging to a group, or completion of challenges, for instance.
+Badges represent informations attached to a user on a given platform, that can be transmitted to other platforms. These informations may represent awards, access rights, appartenance to a group, competence mastered, etc. that a user has acquired on the source platform, and that could be useful on other platforms.
 
-They are attached to users, and some of them can even allow authentication of users from one platform to another.
+A badge may be used on another platform as a requirement to obtain access to some content, as a way to brag about achievements, etc. or even as an authentication method.
 
 ## Badge verification
 
