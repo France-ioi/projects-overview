@@ -129,7 +129,7 @@ This library is used to create tasks that make heavy use of drag & drop within v
 TODO. This is an example of task that uses MathJax
 
 ## Task editor
-* [task-editor](https://github.com/France-ioi/login-module)
+* [task-editor](https://github.com/France-ioi/task-editor)
 This repository contains an editor that takes a json schema and some templates, and provides a visual interface to edit a task based on these.
 
 ## Bebras review
